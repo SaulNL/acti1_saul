@@ -1,0 +1,281 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: black;
+}
+.menu{  
+    position: sticky;
+    top:0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;  
+    margin:0px auto 50px auto;
+    background: black;
+    z-index: 10;
+}
+
+.menu a{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 23px;
+    color: white;
+}
+.menu a:hover{
+    transform: translateY(0);
+    box-shadow:
+      inset 0 0 60px whitesmoke,
+      inset 20px 0 80px #f0f,
+      inset -20px 0 80px #0ff,
+      inset 20px 0 300px #f0f,
+      inset -20px 0 300px #0ff,
+      0 0 50px #fff,
+      -10px 0 80px #f0f,
+      10px 0 80px #0ff;
+      color: black;
+}
+.margen{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.trjeta{
+    min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.column{
+	flex: 0 0 46%;
+}
+
+.card{
+	border:1px solid;
+	position: relative;
+	background: #000;
+	overflow: hidden;
+}
+.card img{
+	max-width: 100%;
+	vertical-align: top;
+	opacity: 0
+}
+.description{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	padding: 30px;
+	color: #fff;
+	text-align: center;
+	font-size: 20px;
+	line-height: 1.4;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+	transition: all 0.7s ease-out;
+	transform: scale(0.6);
+	opacity: 0
+}
+.description h3{
+	font-size: 26px;
+	margin:0;
+}
+.description a{
+	display: inline-block;
+	padding: 8px 20px;
+	text-decoration: none;
+	color: #fff;
+	background: #04098d;
+}
+.card:hover .description{
+	opacity: 1;
+	transform: scale(1);
+}
+
+.over_pic{
+	position: absolute;
+	width: 50%;
+	height: 50%;
+	background-size: 200% 200%;
+	transition: all 0.7s ease-out;
+	z-index: 2;
+}
+
+.over_pic:nth-of-type(1){
+	left: 0;
+	top: 0;
+	background-position: left top;
+}
+.card:hover .over_pic:nth-of-type(1){
+	transform: translate(-100%, -100%);
+}
+.over_pic:nth-of-type(2){
+	right: 0;
+	top: 0;
+	background-position: right top;
+}
+.card:hover .over_pic:nth-of-type(2){
+	transform: translate(100%, -100%);
+}
+.over_pic:nth-of-type(3){
+	left: 0;
+	bottom: 0;
+	background-position: left bottom;
+}
+.card:hover .over_pic:nth-of-type(3){
+	transform: translate(-100%, 100%);
+}
+.over_pic:nth-of-type(4){
+	right: 0;
+	bottom: 0;
+	background-position: right bottom;
+}
+.card:hover .over_pic:nth-of-type(4){
+	transform: translate(100%, 100%);
+}
+
+.les img{
+  width: 800px;
+  height: 400px;
+  margin-left: 200px;
+  margin-top: 50px;
+}
+
+h2{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom:30px ;
+    color: #fff;
+}
+
+
+.fluter{
+    display: flex;
+    max-width: 1200px;
+    margin: auto ;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+}
+
+.tuiter, .face, .insta, .tictoc, .what{
+    width: 120px;
+    height: 110px;
+    margin-top: 10px; 
+    box-sizing: border-box;
+}
+
+/*box-shadow: 3px 3px 5px rgb(230, 230, 230);*/
+
+
+.fluter a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    margin: 10px auto auto auto;
+    padding: 5px;
+    border-radius: 50px;
+}
+
+/*iconos...............*/
+svg{
+    width: 30px;
+    height:30px;
+}
+
+.tuiter svg{
+   fill: white;
+}
+.face svg{
+   fill: white;
+}
+
+.insta svg{
+    fill: white;
+}
+
+.tictoc svg{
+    fill: white;
+}
+
+.what svg{
+  fill: white;
+}
+
+.fluter .a1{
+    background: rgb(113, 184, 250);
+}
+.fluter .a2{
+    background: blue;
+}
+.fluter .a3{
+    background: #f0f;
+}
+.fluter .a4{
+    background: black;
+    border: 1px solid white ;
+}
+
+.fluter .a5{
+    background: rgb(38, 236, 38);
+}
+
+.fluter p{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.tuiter p{
+    color: rgb(113, 184, 250);
+}
+
+.face p{
+    color: blue;
+}
+
+.insta p{
+    color: #f0f;
+}
+
+.tictoc p{
+    color: #fff;
+}
+.what p{
+    color: rgb(38, 236, 38);
+}
+
+.face:hover, .what:hover, .insta:hover, .tictoc:hover, .tuiter:hover{
+    transform: scale(1.1);
+}
+
+.derecho{
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+.derecho p{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: rgb(241, 183, 241);
+}
+
+b{
+    color: #fff;
+}

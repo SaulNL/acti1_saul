@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado</title>
+    <link rel="stylesheet" href="../publica/css/resultado.css">
+</head>
+<body>
+
+    <div class="menu">
+        <a href="/vistas/index.html">Home</a>
+        <a href="/vistas/novedades.html">Novedades</a>
+        <a href="/vistas/pantallas.html">Pantallas</a>
+        <a href="/vistas/teclados.html">Teclados</a>
+        <a href="/vistas/mouses.html">Mouses</a>
+        <a href="/vistas/audifonos.html">Audifonos</a>
+        <a href="/vistas/formulario.html">Formulario</a>
+        <a href="/vistas/resultado.html">Datos</a>
+    </div>
+
+
+    <div class="container">
+        <h1>Datos</h1>
+        <p class="pfor">Nombre: <span id="nombre"></span></p>
+        <p class="pfor">Email: <span id="email"></span></p>
+        <p class="pfom">Comentario: <span id="comentario"></span></p>
+     </div>
+    <script>
+        // Obtener los parámetros de la URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const nombre = urlParams.get('nombre');
+        const email = urlParams.get('email');
+        const comentario=urlParams.get('comentario');
+    
+        // Mostrar los datos en la página
+        document.getElementById('nombre').textContent = nombre;
+        document.getElementById('email').textContent = email;
+        document.getElementById('comentario').textContent= comentario;
+      </script>
+</body>
+</html>

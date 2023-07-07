@@ -1,0 +1,211 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: black;
+}
+
+
+
+.menu{  
+    position: sticky;
+    top:0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;  
+    margin:0px auto 100px auto;
+    background: black;
+    z-index: 10;
+}
+
+.menu a{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 23px;
+    color: white;
+}
+.menu a:hover{
+    transform: translateY(0);
+    box-shadow:
+      inset 0 0 60px whitesmoke,
+      inset 20px 0 80px #f0f,
+      inset -20px 0 80px #0ff,
+      inset 20px 0 300px #f0f,
+      inset -20px 0 300px #0ff,
+      0 0 50px #fff,
+      -10px 0 80px #f0f,
+      10px 0 80px #0ff;
+      color: black;
+}
+
+
+.margen{
+    max-width: 1200px;
+    margin: 50px auto;
+}
+ 
+.galeria img {
+    box-shadow: 0 8px 10px -4px rgba(226, 221, 221, 0.6);
+    border-radius: 15px;
+    height: 300px;
+    width: 250px;
+}
+
+.materialbox-caption {
+    bottom: 30px;
+    right: 0;
+    width: 40%;
+    height: auto;
+    padding: 10px;
+    margin: auto;
+    background: #000;
+    box-shadow: 5px 5px #fff;
+    font-size: 20px;
+    color: #fff;
+    line-height: 28px;
+}
+
+.galeria .col {
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 600px){
+    .materialbox-caption {
+         width: 90%;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .materialbox-caption {
+         width: 70%;
+    }
+}
+
+h2{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom:30px ;
+    color: #fff;
+}
+
+
+.fluter{
+    display: flex;
+    max-width: 1200px;
+    margin: auto ;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+}
+
+.tuiter, .face, .insta, .tictoc, .what{
+    width: 120px;
+    height: 110px;
+    margin-top: 10px; 
+    box-sizing: border-box;
+}
+
+/*box-shadow: 3px 3px 5px rgb(230, 230, 230);*/
+
+
+.fluter a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    margin: 10px auto auto auto;
+    padding: 5px;
+    border-radius: 50px;
+}
+
+/*iconos...............*/
+svg{
+    width: 30px;
+    height:30px;
+}
+
+.tuiter svg{
+   fill: white;
+}
+.face svg{
+   fill: white;
+}
+
+.insta svg{
+    fill: white;
+}
+
+.tictoc svg{
+    fill: white;
+}
+
+.what svg{
+  fill: white;
+}
+
+.fluter .a1{
+    background: rgb(113, 184, 250);
+}
+.fluter .a2{
+    background: blue;
+}
+.fluter .a3{
+    background: #f0f;
+}
+.fluter .a4{
+    background: black;
+    border: 1px solid white ;
+}
+
+.fluter .a5{
+    background: rgb(38, 236, 38);
+}
+
+.fluter p{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.tuiter p{
+    color: rgb(113, 184, 250);
+}
+
+.face p{
+    color: blue;
+}
+
+.insta p{
+    color: #f0f;
+}
+
+.tictoc p{
+    color: #fff;
+}
+.what p{
+    color: rgb(38, 236, 38);
+}
+
+.face:hover, .what:hover, .insta:hover, .tictoc:hover, .tuiter:hover{
+    transform: scale(1.1);
+}
+
+.derecho{
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+.derecho p{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: rgb(241, 183, 241);
+}
+
+b{
+    color: #fff;
+}

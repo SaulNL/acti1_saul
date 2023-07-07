@@ -1,0 +1,243 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: black;
+}
+
+.imagen{
+  max-width: 1200px;
+  margin: auto;
+}
+
+.imagen img{
+    width: 80%;
+    margin: 0px 0px 0px 110px;
+    height: 500px;
+}
+
+
+.menu{  
+    position: sticky;
+    top:0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;  
+    margin:0px auto 50px auto;
+    background: black;
+    z-index: 10;
+}
+
+.menu a{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 23px;
+    color: white;
+}
+.menu a:hover{
+    transform: translateY(0);
+    box-shadow:
+      inset 0 0 60px whitesmoke,
+      inset 20px 0 80px #f0f,
+      inset -20px 0 80px #0ff,
+      inset 20px 0 300px #f0f,
+      inset -20px 0 300px #0ff,
+      0 0 50px #fff,
+      -10px 0 80px #f0f,
+      10px 0 80px #0ff;
+      color: black;
+}
+
+.fotos{
+    display: flex;
+	align-items: center;
+	justify-content: space-around;
+	min-height: 100vh;
+    max-width: 1200px;
+    margin: auto;
+}
+
+img{
+    width: 350px;
+    height: 400px;
+}
+
+.ui-card{
+	width: 350px;
+	position: relative;
+	overflow: hidden;
+	transition: all 0.3s ease-out;
+	background:radial-gradient(#111 50%, #000 100%);
+}
+
+.ui-card img{
+	transform: scale(1.3);
+	transition: all 0.3s ease-out;
+}
+.ui-card:hover img{
+	transform: scale(1.1) translateY(-20px); 
+	opacity: 0.3
+}
+.ui-card .description{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 15px;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-size: 18px;
+}
+.ui-card .description h3{
+	font-weight: 700;
+	font-size: 32px;
+	margin: 0 0 20px;
+	transform: translateY(30px);
+	opacity: 0;
+	transition: all 0.3s ease-out;
+
+}
+.ui-card .description p{
+	transform: translateY(30px);
+	opacity: 0;
+	transition: all 0.3s ease-out 0.2s;
+}
+.ui-card .description a:hover{
+	background:#0a83c5;
+}
+.ui-card:hover .description h3{
+	opacity: 1;
+	transform: translateY(0px);
+}
+.ui-card:hover .description p{
+	opacity: 1;
+	transform: translateY(0px);
+}
+
+h2{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom:30px ;
+    color: #fff;
+}
+
+
+.fluter{
+    display: flex;
+    max-width: 1200px;
+    margin: auto ;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+}
+
+.tuiter, .face, .insta, .tictoc, .what{
+    width: 120px;
+    height: 110px;
+    margin-top: 10px; 
+    box-sizing: border-box;
+}
+
+/*box-shadow: 3px 3px 5px rgb(230, 230, 230);*/
+
+
+.fluter a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    margin: 10px auto auto auto;
+    padding: 5px;
+    border-radius: 50px;
+}
+
+/*iconos...............*/
+svg{
+    width: 30px;
+    height:30px;
+}
+
+.tuiter svg{
+   fill: white;
+}
+.face svg{
+   fill: white;
+}
+
+.insta svg{
+    fill: white;
+}
+
+.tictoc svg{
+    fill: white;
+}
+
+.what svg{
+  fill: white;
+}
+
+.fluter .a1{
+    background: rgb(113, 184, 250);
+}
+.fluter .a2{
+    background: blue;
+}
+.fluter .a3{
+    background: #f0f;
+}
+.fluter .a4{
+    background: black;
+    border: 1px solid white ;
+}
+
+.fluter .a5{
+    background: rgb(38, 236, 38);
+}
+
+.fluter p{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.tuiter p{
+    color: rgb(113, 184, 250);
+}
+
+.face p{
+    color: blue;
+}
+
+.insta p{
+    color: #f0f;
+}
+
+.tictoc p{
+    color: #fff;
+}
+.what p{
+    color: rgb(38, 236, 38);
+}
+
+.face:hover, .what:hover, .insta:hover, .tictoc:hover, .tuiter:hover{
+    transform: scale(1.1);
+}
+
+.derecho{
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+.derecho p{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: rgb(241, 183, 241);
+}
+
+b{
+    color: #fff;
+}

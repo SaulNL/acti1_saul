@@ -1,0 +1,14 @@
+#splide {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.splide__slide {
+  text-align: center;
+}
+
+.splide__slide canvas,
+.splide__slide img {
+  max-width: 100%;
+  height: auto;
+}
